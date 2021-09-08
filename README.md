@@ -1,1 +1,1 @@
-# 01_SQL_Basics
+# 01_DB_SQL
