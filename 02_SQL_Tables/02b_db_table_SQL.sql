@@ -1,4 +1,4 @@
-/* ------  Strukturen ----- */
+/* ------  Strukturen UNIQUE ----- */
 
 /* Datenbanken auf Server anzeigen */
 SHOW DATABASES;
