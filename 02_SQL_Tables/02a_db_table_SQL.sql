@@ -15,12 +15,9 @@ USE boo;
 /* Tabelle anlegen, falls noch nicht vorhanden */
 CREATE TABLE IF NOT EXISTS test
 (
-    name VARCHAR(20),
-    age INT
+    name VARCHAR(20) NOT NULL DEFAULT "TBA",
+    age INT NOT NULL DEFAULT 0
 );
-
-/* Alle Tabellen in der DB anzeigen */
-SHOW TABLES;
 
 /* Struktur der Tabelle anzeigen */
 DESCRIBE test;
