@@ -1,7 +1,8 @@
 /* ------  Strukturen UNIQUE ----- */
 
-/* Datenbanken auf Server anzeigen */
-SHOW DATABASES;
+/*
+KEY
+*/
 
 /* DB boo löschen, falls vorhanden*/
 DROP DATABASE IF EXISTS boo;
@@ -15,8 +16,8 @@ USE boo;
 /* Tabelle anlegen, falls noch nicht vorhanden */
 CREATE TABLE IF NOT EXISTS test
 (
-    -- Constraint: UNIQUE
-    name VARCHAR(20) NOT NULL UNIQUE DEFAULT "TBA",
+    
+    name VARCHAR(20) NOT NULL DEFAULT "TBA",
     age INT NOT NULL DEFAULT 0
 );
 
@@ -28,7 +29,8 @@ INSERT INTO test(name,age) VALUES ("Grizabella", 29);
 INSERT INTO test(age,name) VALUES (35, "Alonzo");
 INSERT INTO test VALUES ();
 
-INSERT INTO test(age,name) VALUES (35, "Alonzo der Coole");
+/* Doppelte Datensätze werden zugelassen! */
+INSERT INTO test(age,name) VALUES (24, "Alonzo");
 
 /* Inhalte der Tabelle anzeigen */
 SELECT * FROM test;
